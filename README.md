@@ -34,6 +34,10 @@ Tools are defined as the software that an attacker uses to establish initial acc
 
 TTP refers to the Tactics, Techniques and Procedures used by adversaries to accomplish their mission, from reconnaissance to action on objectives. TTP does not refer to specific tooling, but rather the methods used by the tooling to accomplish the adversaries goals, as outlined in the <a href="https://attack.mitre.org">MITRE ATT&CK Matrix</a>. For example, a man in the middle attack is a technique that many software pieces are capable of such as ettercap and bettercap however they both utilize the same technique (MiTM) to capture data traversing the network from targeted hosts. Tactics, Techniques and Procedures earn their spot at Level 6 since detection and response renders the TTP's useless, regardless of the software or configuration that the adversary is using. Depending on the adversaries motivations, the adversary will invest a great deal of time in researching and developing new TTP's to accomplish their goals or find a new target that remains vulnerable to their current TTP's.
 
+# Conclusion
+  
+The Pyramid of Pain represents a scalable model in which the "pain" for either the defender or the attacker is based on the indicator of compromise that the defenders focus their attention on. If defenders aim for the lower tiers of the pyramid, the attacker will have an easier time bypassing the defenses put in place, meaning the defender's time is wasted. When defenders aim for the higher levels of the pyramid, they are able to slow down or completely demotivate an attacker since the attacker will now spend more time attempting to attack a single target rather than successfully attacking three targets in the amount of time that the single attempt takes. This outcome ultimately depends on the attacker's motivation, as a financially motivated attacker will likely take the stick and move approach, whereas the hacktivist will commit to attacking the single target who has violated their ideology.
+  
 # Further Reading
 <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">Davids original blog post on the Pyramid of Pain</a>   
   
