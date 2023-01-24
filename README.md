@@ -17,3 +17,7 @@
 # Level 2: IP Addresses
   
   Internet protocol addresses sit at Level 2 on the pyramid. Any remote attacker is going to require an IP address to establish CNC communications with an infected host. This means that the IP address can be blocked at the network layer, preventing further communications to the IP address from an infected host. The issue is that there are so many IP addresses that it's trivial for an attacker to simply host their infrastructure under another IP address. This is easily done through services such as the onion router. IP Addresses earn their spot at level 2 since responders could spend weeks blocking IP addresses with little fruit to bear for their labor.
+
+# Level 3: Domains
+
+Often, an attacker will utilize a domain for resolving IP addresses within their payloads call back. This allows the attacker to use any number of IP addresses and retain communications to infected hosts from their CNC infrastructure. When a domain has been blocked at layer 7, an attacker will need to purchase, register, host and modify records on the domain. The domain will then require up to 48 hours time to propagate across name servers on the internet before it's completely ready for abuse. Domains are relatively easy to acquire or rename, however they earn their spot at Level 3 since the adversary must put some time and effort into acquiring a new domain that has not placed into a deny-list, sinkhole or other prevention mechanism.
