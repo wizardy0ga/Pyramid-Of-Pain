@@ -7,7 +7,7 @@
 # What is the Pyramid of Pain?
 
 <p align="center">
-  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when a Indicator of Compromise class from the pyramid is paired with a quick response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
+  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when an indicator of compromise class from the pyramid is paired with a quick response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
 </p>
   
 # Level 1: Hash Values
@@ -29,3 +29,14 @@ Artifacts are pieces of data left behind by the presence of malware. A host arti
 # Level 5: Tools
   
 Tools are defined as the software that an attacker uses to establish initial access, escalate privileges and act on objectives. Typically, they are packed in with the attacker after initial access is gained, rather than living off the land. When a response team has developed enough detection methods for the attacker's tooling, the attacker will be forced to acquire new tooling, which takes valuable time away from the attacker's objectives since their time is invested in the acquisition of and training with the new tooling. Tools earn their spot at level 5 since their prompt detection forces the attacker back to the drawing board for a greater period of time.
+
+# Level 6: Tactics, Techniques and Procedures
+
+TTP refers to the Tactics, Techniques and Procedures used by adversaries to accomplish their mission, from reconnaissance to action on objectives. TTP does not refer to specific tooling, but rather the methods used by the tooling to accomplish the adversaries goals, as outlined in the <a href="https://attack.mitre.org">MITRE ATT&CK Matrix</a>. For example, a man in the middle attack is a technique that many software pieces are capable of such as ettercap and bettercap however they both utilize the same technique (MiTM) to capture data traversing the network from targeted hosts. Tactics, Techniques and Procedures earn their spot at Level 6 since detection and response renders the TTP's useless, regardless of the software or configuration that the adversary is using. Depending on the adversaries motivations, the adversary will invest a great deal of time in researching and developing new TTP's to accomplish their goals or find a new target that remains vulnerable to their current TTP's.
+
+# Further Reading
+<a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">Davids original blog post on the Pyramid of Pain</a>   
+  
+<a href="https://cyware.com/educational-guides/cyber-threat-intelligence/the-concept-of-pyramid-of-pain-f358">CyWare: The Concept of Pyramid of Pain</a>  
+  
+<a href="https://www.attackiq.com/glossary/pyramid-of-pain/">AttackIQ: What is the Pyramid of Pain?</a>  
