@@ -25,3 +25,7 @@ Often, an attacker will utilize a domain for resolving IP addresses within their
 # Level 4: Network / Host Artifacts
 
 Artifacts are pieces of data left behind by the presence of malware. A host artifact could be a registry key change or a file that is being written to by the malicious process. A network artifact could be a unique user agent string, URI patterns, SMTP mailer values or other data that traverses the network which is unique to the malware producing the traffic. Ideally, a responder will block communications on the network based on the presence of known artifacts such as a specific user agent in a web request. Artifacts earn their spot at level 4 since detection and response will often result in the attacker expending their time performing reconfiguration of the malware while investigating how and why the malware was detected.
+
+# Level 5: Tools
+  
+Tools are defined as the software that an attacker uses to establish initial access, escalate privileges and act on objectives. Typically, they are packed in with the attacker after initial access is gained, rather than living off the land. When a response team has developed enough detection methods for the attacker's tooling, the attacker will be forced to acquire new tooling, which takes valuable time away from the attacker's objectives since their time is invested in the acquisition of and training with the new tooling. Tools earn their spot at level 5 since their prompt detection forces the attacker back to the drawing board for a greater period of time.
