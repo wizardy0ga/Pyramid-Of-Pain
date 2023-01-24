@@ -7,7 +7,7 @@
 # What is the Pyramid of Pain?
 
 <p align="center">
-  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when an indicator of compromise class from the pyramid is paired with a quick response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
+  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when an indicator of compromise class from the pyramid is paired with a quick detection and response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
 </p>
   
 # Level 1: Hash Values
