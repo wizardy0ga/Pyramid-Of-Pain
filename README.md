@@ -7,7 +7,7 @@
 # What is the Pyramid of Pain?
 
 <p align="center">
-  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when an indicator of compromise is paired with a quick response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
+  The Pyramid of Pain is an incident response model created in 2013 by David J Bianco. The model depicts a scaling amount of damage that can be inflicted to a threat actor's operations when a Indicator of Compromise class from the pyramid is paired with a quick response from a defensive actor. You can read Davids original blog post on the topic <a href="http://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html">here<a/>.
 </p>
   
 # Level 1: Hash Values
@@ -21,3 +21,7 @@
 # Level 3: Domains
 
 Often, an attacker will utilize a domain for resolving IP addresses within their payloads call back. This allows the attacker to use any number of IP addresses and retain communications to infected hosts from their CNC infrastructure. When a domain has been blocked at layer 7, an attacker will need to purchase, register, host and modify records on the domain. The domain will then require up to 48 hours time to propagate across name servers on the internet before it's completely ready for abuse. Domains are relatively easy to acquire or rename, however they earn their spot at Level 3 since the adversary must put some time and effort into acquiring a new domain that has not placed into a deny-list, sinkhole or other prevention mechanism.
+
+# Level 4: Network / Host Artifacts
+
+Artifacts are pieces of data left behind by the presence of malware. A host artifact could be a registry key change or a file that is being written to by the malicious process. A network artifact could be a unique user agent string, URI patterns, SMTP mailer values or other data that traverses the network which is unique to the malware producing the traffic. Ideally, a responder will block communications on the network based on the presence of known artifacts such as a specific user agent in a web request. Artifacts earn their spot at level 4 since detection and response will often result in the attacker expending their time performing reconfiguration of the malware while investigating how and why the malware was detected.
